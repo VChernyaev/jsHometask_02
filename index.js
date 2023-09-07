@@ -50,4 +50,16 @@ switch (true) {
 
 
 // Задание 4. Необходимо от пользователя получить число. Необходимо вывести разряды числа (количество сотен, десятков, едениц)
+let number = +prompt('Введите число от 1 до 999');
+
+let hundred = Math.floor((number - number%100)/100);
+
+  
+let dozen =(number-hundred*100)/10
+  
+
+let units = (dozen*10)%10;
+
+alert(`В числе ${number} ${hundred} десятков, ${hundred} сотен и ${units} едениц`);
+
 
